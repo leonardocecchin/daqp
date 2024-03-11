@@ -22,7 +22,7 @@ add_library(daqp SHARED ${daqp_src} ${daqp_headers} ${daqp_codegen_src} ${daqp_c
 
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES}") # math for C api
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -Wall -Wextra")
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -Wall -Wextra")
 
 target_link_libraries(daqpstat daqp)
 
